@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Health Watch - Dashboard</title>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+<style type="text/css">
+    .box{
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+        border: 1px solid #fffff;
+    }
+    .red{  background-image:url('bg.jpg'); }
+    .green{ background-image:url('bg.jpg') }
+    .blue{ background-image:url('bg.jpg') }
+    .test{background-image:url('bg.jpg')}
+     .test1{background-image:url('bg.jpg')}
+      .test2{background-image:url('bg.jpg')}
+       .test3{background-image:url('bg.jpg')}
+        .test4{background-image:url('bg.jpg')}
+        body{
+    background-image:url('bg.jpg');
+ 
+
+
+}
+
+.butn{
+    margin-left: 17%;
+    margin-top: 5%;
+}
+
+.head{
+
+    background-color: rgba(0,0,0,0.5);
+    border: 2px ridge white;
+    border-radius: 25px;
+    padding-bottom: 5%
+}
+
+#discharge_scenario_1,#discharge_scenario_2,#cost_scenario_1,#cost_scenario_2,#cost_scenario_3,#cost_scenario_4,#case_study_1,#case_study_2,#case_study_3,#case_study_4{
+    width: 80%;
+    border: 2px solid white;
+    box-shadow: 5px 5px 20px white;
+    color: white !important;
+    /*background-color: yellow;*/
+    margin-top: 5%;
+    margin-left: 10%;
+    display: none;
+    float: left;
+     
+}
+
+.mirror {display: table-caption;-webkit-box-reflect: below -35px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent), to(rgba(255,255,255,0.9)));}
+
+#discharge_scenario_1:hover ,#discharge_scenario_2:hover ,#cost_scenario_1:hover ,#cost_scenario_2:hover ,#cost_scenario_3:hover ,#cost_scenario_4:hover ,#case_study_1:hover ,#case_study_2:hover ,#case_study_3:hover ,#case_study_4:hover {
+    width: 80%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 50px white;
+    color: white !important;
+    /*background-color: yellow;*/
+    margin-top: 5%;
+    margin-left: 10%;
+    /*display: none;*/
+     
+}
+
+.tableauPlaceholder{
+    margin-left: 5%;
+    border: 10px ridge white;
+}
+
+.h1{
+    color: red !important;
+    margin-left: 10%;
+}
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+</head>
+<body>
+
+     <div class="navbar navbar-default">
+            <h4 style="color: black; font-size: 25px" ><center><b>Health <span class="glyphicon glyphicon-plus" style='color:red'></span> Watch</b></center></h4>
+    </div>
+    <div class="bg-default head">
+ 
+
+        <button class="btn btn-primary butn mirror" id="dsbtn">Dishcharge Scenario</button>
+        <button class="btn btn-success butn mirror" id="csbtn">Cost Scenario</button>
+        <button class="btn btn-danger butn mirror" id="cscbtn">Case Study</button>
+ 
+
+    </div>
+     
+                <div id="discharge_scenario_1"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 27%">Geo-Spatial Total Discharges per State</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Sheet 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Discharge_Rate_State&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Discharge_Rate_State&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Discharge_Rate_State&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+                 </div> 
+
+
+                 <div id="discharge_scenario_2">
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 44%">Total Discharges per State</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='total_Provider_State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Total_Providers_State&#47;total_Provider_State&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Total_Providers_State&#47;total_Provider_State' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Total_Providers_State&#47;total_Provider_State&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                 
+
+                <div id="cost_scenario_1"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 46%">Total Providers per State</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='total_Provider_State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Total_Providers_State_new1&#47;total_Provider_State&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Total_Providers_State_new1&#47;total_Provider_State' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Total_Providers_State_new1&#47;total_Provider_State&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                 <div id="cost_scenario_2"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 51%">Total Costs per State</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Total_Cost_State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Total_Cost_State_new&#47;Total_Cost_State&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Total_Cost_State_new&#47;Total_Cost_State' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;Total_Cost_State_new&#47;Total_Cost_State&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                <div id="cost_scenario_3"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 19%">Avg Total Cost vs Covered Charges per State</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='total_Provider_State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;Avg_covered_total&#47;total_Provider_State&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Avg_covered_total&#47;total_Provider_State' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;Avg_covered_total&#47;total_Provider_State&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                <div id="cost_scenario_4"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 41%">Min and Max Costs per State</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='total_Provider_State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;mi&#47;min_max_state&#47;total_Provider_State&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='min_max_state&#47;total_Provider_State' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;mi&#47;min_max_state&#47;total_Provider_State&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                <div id="case_study_1"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 33%">Geo-Spatial Providers in California</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Providers_CA ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Providers_CA&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Cities_Avg_covcharges&#47;Providers_CA' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Providers_CA&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                 <div id="case_study_2"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 15%">Providers Comparision(major cities) in California</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Cities_Providers ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Cities_Providers&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Cities_Avg_covcharges&#47;Cities_Providers' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Cities_Providers&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                <div id="case_study_3"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 15%">Major cities Total Cost Comparision in California</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Cities with Avg. Covered Charges ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Cities_Avg_CoveredChar&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Cities_Avg_covcharges&#47;Cities_Avg_CoveredChar' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Cities_Avg_CoveredChar&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+                <div id="case_study_4"> 
+                    <h1 style="color:#EFEDF2 !important;background: #000d1a;margin-left: 20%;margin-right: 18%">Major cities Avg Covered vs Total Pay</h1>
+                        <div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Covered_Payed ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Covered_Payed&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Cities_Avg_covcharges&#47;Covered_Payed' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;Cities_Avg_covcharges&#47;Covered_Payed&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+
+                </div>
+
+
+     
+</body>
+
+<script>
+ 
+
+    $("#dsbtn").click(function(){
+
+        $("#discharge_scenario_1").css("display","block");
+        $("#discharge_scenario_2").css("display","block");
+        $("#cost_scenario_1").css("display","none");
+        $("#cost_scenario_2").css("display","none");
+        $("#cost_scenario_3").css("display","none");
+        $("#cost_scenario_4").css("display","none");
+        $("#case_study_1").css("display","none");
+        $("#case_study_2").css("display","none");
+        $("#case_study_3").css("display","none");
+        $("#case_study_4").css("display","none");
+        // alert("clicked discharge_scenario_1");
+
+    });
+
+    $("#csbtn").click(function() {
+
+        $("#discharge_scenario_1").css("display","none");
+        $("#discharge_scenario_2").css("display","none");
+        $("#cost_scenario_1").css("display","block");
+        $("#cost_scenario_2").css("display","block");
+        $("#cost_scenario_3").css("display","block");
+        $("#cost_scenario_4").css("display","block");
+        $("#case_study_1").css("display","none");
+        $("#case_study_2").css("display","none");
+        $("#case_study_3").css("display","none");
+        $("#case_study_4").css("display","none");
+
+    });
+
+    $("#cscbtn").click(function(){
+
+        $("#discharge_scenario_1").css("display","none");
+        $("#discharge_scenario_2").css("display","none");
+        $("#cost_scenario_1").css("display","none");
+        $("#cost_scenario_2").css("display","none");
+        $("#cost_scenario_3").css("display","none");
+        $("#cost_scenario_4").css("display","none");
+        $("#case_study_1").css("display","block");
+        $("#case_study_2").css("display","block");
+        $("#case_study_3").css("display","block");
+        $("#case_study_4").css("display","block");
+
+    });
+</script>
+</html>                                		

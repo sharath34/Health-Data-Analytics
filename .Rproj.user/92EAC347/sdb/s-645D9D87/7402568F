@@ -1,0 +1,18 @@
+{
+    "contents" : "library(\"ggplot2\")\nhousing <- read.table(\"http://www.jaredlander.com/data/housing.csv\",\n                      sep = \",\", header = TRUE, stringsAsFactors = TRUE)\n                      \n\n          \n                      ",
+    "created" : 1455075073854.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "665240828",
+    "id" : "7402568F",
+    "lastKnownWriteTime" : 7011605692497750387,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

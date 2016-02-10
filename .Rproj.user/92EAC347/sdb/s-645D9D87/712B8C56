@@ -1,0 +1,17 @@
+{
+    "contents" : "#Start\n\nlibrary(\"dplyr\")\nlibrary(\"data.table\")\nlibrary(\"stringr\")\nlibrary(\"ggplot2\")\nlibrary(\"choroplethr\")\n\n#Read the data to dataframes\n\n\n\nselcol = c(\"DRG Definition\",\"Provider City\",\"Provider State\",\"Provider Zip Code\",\n           \"Total Discharges\",\"Average Covered Charges\",\"Average Total Payments\",\"Average Medicare Payments\")\n\n\nhealthData <- fread(\"Inpatient_Prospective.csv\", select = selcol)\n\n \nhealthData <- tbl_df(healthData)\n\n#Deletes any rows with null's\n\nna.omit(healthData)\n\n#Assigning new column names \n\ncolnames(healthData) <- c(\"DRG_Definition\",\"City\",\"State\",\"Zip\",\"Discharge\",\"Covered_Charges\",\"Avg_Cost\",\"Total_Pay\")\n\n#Now removing the '$' symbol for the columns which has it\n\nCovered_Charges <- as.numeric(gsub(\"$\", \"\", healthData$Covered_Charges, fixed = TRUE))\n\nAvg_Cost <- as.numeric(gsub(\"$\", \"\", healthData$Avg_Cost, fixed = TRUE))\n\nTotal_Pay <- as.numeric(gsub(\"$\", \"\", healthData$Total_Pay, fixed = TRUE))\n\n#Now putting every thing in the dataframe\n\nhealthData_new <- data.frame(healthData[1],healthData[2],healthData[3],healthData[4],healthData[5],Covered_Charges,Avg_Cost,Total_Pay)\n\n#Writting the dataframe to a csv file\n\nwrite.csv2(healthData_new,\"Inpatient_Prospective_new.csv\",quote = FALSE, row.names = FALSE)\n\n#plot diagram\n\ng <- ggplot(healthData, aes(x= State , y= Discharge)) + scale_fill_hue(l=40) + geom_bar(stat = \"identity\") +\n  theme(axis.text.x = element_text(angle = 30, hjust = 1),\n        panel.background = element_rect(fill = 'white' ))\ng\n\n#End",
+    "created" : 1454284648122.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4164253515",
+    "id" : "712B8C56",
+    "lastKnownWriteTime" : 1454316106,
+    "path" : "~/R Analytics/healthdata_code_final.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

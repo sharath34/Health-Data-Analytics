@@ -1,0 +1,18 @@
+{
+    "contents" : "library(\"dplyr\")\nlibrary(\"data.table\")\nlibrary(\"stringr\")\nlibrary(\"ggplot2\")\n\nselcol = c(\"DRG Definition\",\"Provider City\",\"Provider State\",\"Provider Zip Code\",\n           \"Total Discharges\",\"Average Covered Charges\",\"Average Total Payments\",\"Average Medicare Payments\")\nhealthdata <- fread(\"Inpatient_Prospective.csv\", select =  selcol)\n\nhealthdata[100]\n\nhead()\n\n\nhealthdata\n\nhealthdata = tbl_df(healthdata)\n\nhealthdata\ndesc(healthdata)\nsummary(healthdata)",
+    "created" : 1454284504253.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1540411632",
+    "id" : "D147B423",
+    "lastKnownWriteTime" : 1454391528,
+    "path" : "~/R Analytics/Health_prac/script1.R",
+    "project_path" : "script1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
